@@ -6,10 +6,11 @@ buttondob.addEventListener("submit", (e) => {
   e.preventDefault();
   let enteredDate = inputdate.value;
   let dob = new Date(enteredDate);
-  console.log(dob);
-  let year = dob.getFullYear();
-  let month = dob.getMonth();
-  let dayDate = dob.getDate();
+  console.log(typeof dob);
+  let year = String(dob.getFullYear());
+  console.log(typeof year);
+  let month = String(dob.getMonth() + 1).padStart(2, "0");
+  let dayDate = String(dob.getDate()).padStart(2, "0");
 
   console.log(year, month, dayDate);
 
@@ -21,7 +22,7 @@ buttondob.addEventListener("submit", (e) => {
   let joining = reversing.join("");
   console.log(joining);
 
-  if (inputdate.value === joining) {
+  if (concateDate === joining) {
     output.textContent = `This is Palindrom ${joining}`;
   } else {
     output.textContent = `Sorry`;
