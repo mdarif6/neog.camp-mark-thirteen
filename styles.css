@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.palindrome-heading {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.palindrome-section {
+  text-align: center;
+}
+
+.palindrome-date {
+  margin: 1rem;
+}
+.inputdate {
+  padding: 1rem;
+}
+
+.palindrome-button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.output {
+  padding: 1rem;
+}
