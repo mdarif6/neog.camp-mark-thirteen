@@ -23,8 +23,8 @@ buttondob.addEventListener("submit", (e) => {
   console.log(joining);
 
   if (concateDate === joining) {
-    output.textContent = `This is Palindrom ${joining}`;
+    output.textContent = `Yay! Your birtday is Palindrom ${joining}`;
   } else {
-    output.textContent = `Sorry`;
+    output.textContent = `oops! this date is not Palindrome`;
   }
 });

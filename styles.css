@@ -4,16 +4,31 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+:root {
+  --primary-color: white;
+}
+
+.palindrome-main {
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  background-color: rgb(53, 56, 219);
+}
 .palindrome-heading {
+  margin-top: 5rem;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
+  color: var(--primary-color);
 }
 
 .palindrome-section {
   text-align: center;
 }
 
+.dob h3 {
+  color: var(--primary-color);
+}
 .palindrome-date {
   margin: 1rem;
 }
@@ -26,6 +41,12 @@ body {
   border-radius: 0.5rem;
 }
 
+.palindrome-button:hover {
+  background-color: var(--primary-color);
+  background-color: rgb(53, 56, 219);
+}
+
 .output {
   padding: 1rem;
+  color: var(--primary-color);
 }
